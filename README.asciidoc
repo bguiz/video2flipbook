@@ -1,0 +1,44 @@
+= video2flipbook
+
+Downloads a video, then makes a flip book out of it.
+
+You need to print it out, cut the individual frames, and paste them together, of course.
+
+== Installation
+
+You will need to install the `youtube-dl`, `ffmpeg`, and `imagemagick` command line utilities.
+
+Mac:
+
+```
+brew install youtube-dl
+brew install ffmpeg
+brew install imagemagick
+```
+
+== Usage
+
+```
+./video2flipbook.sh https://www.youtube.com/watch?v=OawrlVoQqSs por-que-no-los-dos
+```
+
+Results in:
+
+```
+$ ls por-que-no-los-dos/
+por-que-no-los-dos-page000000.png	por-que-no-los-dos-page000003.png	por-que-no-los-dos-page000006.png	por-que-no-los-dos-page000009.png	por-que-no-los-dos-page000012.png
+por-que-no-los-dos-page000001.png	por-que-no-los-dos-page000004.png	por-que-no-los-dos-page000007.png	por-que-no-los-dos-page000010.png
+por-que-no-los-dos-page000002.png	por-que-no-los-dos-page000005.png	por-que-no-los-dos-page000008.png	por-que-no-los-dos-page000011.png
+```
+
+One of the images:
+
+image:images/por-que-no-los-dos-page000009.png[Por que no los dos?!]
+
+== Author
+
+http://bguiz.com[Brendan Graetz]
+
+== Licence
+
+GPLv3
